@@ -1,0 +1,33 @@
+.sponsorship-section{background:#eeefe7;border-block:1px solid var(--line)}.sponsorship-section .section-intro{font-size:16px;line-height:1.75}.sponsor-form{padding:34px;background:#fffef8;border:1px solid #d3d8c9}.sponsor-form fieldset{padding:0;margin:0 0 30px;border:0;min-width:0}.sponsor-form legend{font-size:18px;font-weight:700;padding:0 0 18px}.sponsor-fields{display:grid;grid-template-columns:1fr 1fr;gap:20px 24px}.sponsor-fields>label{display:flex;flex-direction:column;gap:10px;font-size:14px;line-height:1.5;font-weight:700;min-width:0}.sponsor-fields label>span{display:contents}.sponsor-fields input,.sponsor-fields select,.sponsor-fields textarea{width:100%;min-width:0;padding:12px 14px;border:1px solid #bbc4ae;border-radius:3px;background:white;color:var(--ink);font:16px Arial,Helvetica,sans-serif;line-height:1.5}.sponsor-fields select{appearance:none;padding-right:40px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' fill='none' stroke='%23535f46' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}.sponsor-fields textarea{resize:vertical}.sponsor-fields input:focus,.sponsor-fields select:focus,.sponsor-fields textarea:focus{outline:2px solid #9b7827;outline-offset:2px}.sponsor-wide{grid-column:1/-1}.sponsor-fields small{font-size:13px;font-weight:400;line-height:1.65;color:#657056}.sponsor-options{display:grid;grid-template-columns:1fr 1fr;gap:18px}.sponsor-choice{border:1px solid #bec8b0;display:flex;align-items:flex-start;padding:20px;gap:12px;border-radius:3px;cursor:pointer;line-height:1.6}.sponsor-choice:has(input:checked){background:#f6e9bd;border-color:#9f7c2b}.sponsor-choice input,.sponsor-agreement input{width:18px;height:18px;accent-color:#94701d;flex-shrink:0;margin:4px 0 0}.sponsor-choice strong{font-size:16px;display:block}.sponsor-choice small{font-size:14px;line-height:1.7;display:block;color:#667059;margin-top:8px}.sponsor-agreement{display:flex;align-items:flex-start;gap:12px;font-size:16px;line-height:1.75;padding-top:22px;border-top:1px solid var(--line);cursor:pointer}.sponsor-footnote{font-size:13px;line-height:1.8;color:#657056;margin:16px 0 23px}.sponsor-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.sponsor-actions .button{font-size:14px;line-height:1.5;gap:12px;padding:14px 18px}.sponsor-review{margin-top:28px;border:1px solid #b9c5a9;background:#eef2e5;padding:26px}.sponsor-review[hidden]{display:none}.sponsor-review h3{margin:0 0 19px;font-size:22px;letter-spacing:-.5px}.sponsor-review pre{font:14px/1.8 Arial,Helvetica,sans-serif;white-space:pre-wrap;overflow-wrap:anywhere;margin:0 0 21px;padding:20px;background:white;border:1px solid #d1d9c6}.sponsor-review>p{font-size:14px;line-height:1.8;color:#5d6b4d;margin:0 0 20px}.sponsor-review .sponsor-status{margin:15px 0 0;min-height:22px;font-size:13px}
+@media(max-width:700px){.sponsor-form{padding:24px 20px}.sponsor-fields,.sponsor-options{grid-template-columns:1fr}.sponsor-fields{gap:18px}.sponsor-form legend{font-size:17px}.sponsor-choice{padding:17px}.sponsor-agreement{font-size:14px}.sponsor-review{padding:20px 16px}.sponsor-actions{align-items:stretch;flex-direction:column}.sponsor-actions .button{width:100%}.sponsor-review pre{padding:15px;font-size:14px}.sponsorship-section .section-intro{font-size:16px}}
+@media print{
+  .print-sponsorship{break-before:page}
+  body[data-print-mode="form"]>.print-letter:not(.print-sponsorship){display:none!important}
+  body[data-print-mode="form"]>.print-sponsorship{break-before:auto}
+  .print-sponsorship h2{font-size:12pt;text-align:center;letter-spacing:.4pt;margin:0 0 1.5mm;font-weight:700}
+  .print-sponsorship .paper-intro{text-align:center;font-size:11pt;margin:0 0 5mm}
+  .print-sponsorship .letterhead{margin-bottom:5mm}
+  .paper-fields{margin:0;font-size:11pt}
+  .paper-fields>div{display:grid;grid-template-columns:45mm minmax(0,1fr);gap:3mm;margin-bottom:1.5mm;align-items:baseline;break-inside:avoid}
+  .paper-fields dt{font-weight:400;line-height:1.5}
+  .paper-fields dd{margin:0;border-bottom:1px dotted #777;min-height:5mm;line-height:1.5;overflow-wrap:anywhere;white-space:pre-wrap}
+  .paper-section{margin-top:3mm;break-inside:avoid}
+  .paper-section h3,.paper-declaration h3{font-size:11pt;margin:0 0 2mm;font-weight:700}
+  .paper-section>p{font-size:11pt;margin:0 0 1.5mm;line-height:1.4}
+  .paper-check{display:inline-block;width:3.6mm;height:3.6mm;border:1px solid #000;vertical-align:-.5mm;margin-right:1mm;position:relative}
+  .paper-check.is-checked:after{content:'✓';position:absolute;left:.2mm;top:-1.3mm;font-size:13pt}
+  .paper-option-note{display:inline-block;margin-left:6mm;font-size:10pt}
+  .paper-section .paper-detail-label{margin:3mm 0 1.5mm}
+  .paper-details{min-height:18mm;border:1px solid #888;padding:2mm 3mm;font-size:10pt;line-height:1.4;white-space:pre-wrap;overflow-wrap:anywhere}
+  .paper-declaration{margin-top:3mm;break-inside:avoid}
+  .paper-declaration p{font-size:10.5pt;line-height:1.45;text-align:justify;margin:0}
+  .paper-signature{margin-top:5mm;break-inside:avoid;font-size:11pt;line-height:1.5}
+  .paper-signature p{margin:0 0 2mm}
+  .paper-date-line{display:inline-block;border-bottom:1px dotted #777;width:75mm;height:5mm;vertical-align:baseline}
+  .paper-sign-space{height:12mm}
+  .paper-name-line{display:inline-block;border-bottom:1px dotted #777;width:75mm;height:5mm;vertical-align:baseline}
+  .paper-signature small{font-size:9pt}
+  .paper-return{font-size:9pt;line-height:1.4;margin:4mm 0 0;padding-top:3mm;border-top:1px solid #aaa;break-inside:avoid}
+}
+
+@media print{.paper-company-fields{display:grid;grid-template-columns:1fr 1fr;gap:1.5mm 5mm}.paper-company-fields>div{margin-bottom:0;grid-template-columns:27mm minmax(0,1fr);gap:2mm}.paper-company-fields>div:nth-child(-n+2){grid-column:1/-1;grid-template-columns:45mm minmax(0,1fr);gap:3mm}}

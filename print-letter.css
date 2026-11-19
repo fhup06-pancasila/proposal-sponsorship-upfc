@@ -1,0 +1,23 @@
+.print-letter{display:none}
+@page{size:A4 portrait;margin:18mm 20mm}
+@media print{
+  html,body{margin:0!important;padding:0!important;background:#fff!important;color:#000!important}
+  body> :not(.print-letter){display:none!important}
+  body>.print-letter{display:block!important;width:100%;margin:0;padding:0;color:#000;font-family:"Times New Roman",Times,serif;font-size:11.5pt;line-height:1.45;letter-spacing:normal}
+  .print-letter *{box-sizing:border-box}
+  .print-letter a{color:#000;text-decoration:none}
+  .print-letter .letterhead{display:grid;grid-template-columns:25mm minmax(0,1fr);gap:6mm;align-items:center;padding-bottom:4mm;margin-bottom:7mm;border-bottom:3px double #000;break-inside:avoid}
+  .print-letter .letterhead img{width:23mm;height:23mm;object-fit:contain;border-radius:0}
+  .print-letter .letterhead h1{font-family:Arial,Helvetica,sans-serif;font-size:16pt;line-height:1.2;letter-spacing:.5pt;margin:0 0 2mm;font-weight:700}
+  .print-letter .letterhead p{margin:0;font-size:10pt;line-height:1.5;text-align:left}
+  .print-letter .letterhead .letterhead-motto{font-size:10pt;letter-spacing:1pt;margin-bottom:1mm}
+  .print-letter .letter-reference{margin:0 0 5mm;font-size:11.5pt;line-height:1.45;text-align:left}
+  .print-letter .letter-addressee{margin:0 0 5mm;font-size:11.5pt;line-height:1.45;text-align:left}
+  .print-letter .letter-copy p{margin:0 0 3.2mm;font-size:11.5pt;line-height:1.45;text-align:justify;orphans:3;widows:3}
+  .print-letter .letter-copy .letter-greeting{text-align:left;margin-bottom:3.2mm}
+  .print-letter .letter-options{margin:0 0 3.2mm;padding-left:6mm;list-style:decimal}
+  .print-letter .letter-options li{margin:0 0 2mm;padding-left:1mm;font-size:11.5pt;line-height:1.45;text-align:justify;break-inside:avoid}
+  .print-letter .letter-signature{margin-top:5mm;break-inside:avoid;font-size:11.5pt;line-height:1.45}
+  .print-letter .letter-signature p{margin:0;text-align:left}
+  .print-letter .letter-signature .letter-signature-name{margin-top:9mm;font-weight:700;text-decoration:underline;text-underline-offset:2pt}
+}

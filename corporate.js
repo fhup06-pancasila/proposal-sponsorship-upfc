@@ -39,7 +39,7 @@
   window.addEventListener('afterprint', () => {
     document.querySelectorAll('details').forEach((item, index) => {item.open = previousDetails[index] ?? false;});
   });
-  document.querySelectorAll('[data-print]').forEach(button => button.addEventListener('click', () => window.print()));
+  document.querySelectorAll('[data-print]').forEach(button => button.addEventListener('click', () => {delete document.body.dataset.printMode;window.print();}));
   if ('IntersectionObserver' in window) {
     const links = [...navigation.querySelectorAll('a')];
     const observer = new IntersectionObserver(entries => {
